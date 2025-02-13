@@ -5,6 +5,7 @@ import com.ralphmarondev.pagey.book.data.network.RemoteBookDataSource
 import com.ralphmarondev.pagey.book.data.repository.DefaultBookRepository
 import com.ralphmarondev.pagey.book.domain.BookRepository
 import com.ralphmarondev.pagey.book.presentation.SelectedBookViewModel
+import com.ralphmarondev.pagey.book.presentation.book_detail.BookDetailViewModel
 import com.ralphmarondev.pagey.book.presentation.book_list.BookListViewModel
 import com.ralphmarondev.pagey.core.data.HttpClientFactory
 import org.koin.core.module.Module
@@ -21,5 +22,6 @@ val sharedModule = module {
     singleOf(::DefaultBookRepository).bind<BookRepository>()
 
     viewModelOf(::BookListViewModel)
+    viewModelOf(::BookDetailViewModel)
     viewModelOf(::SelectedBookViewModel)
 }
