@@ -1,4 +1,4 @@
-package com.ralphmarondev.pagey
+package com.ralphmarondev.pagey.app
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.fillMaxSize
